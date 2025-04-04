@@ -1,0 +1,18 @@
+.topbar {
+    display: flex;
+    background-color: #A158FF;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topbar > div {
+    margin: 4.5px;
+    padding: 4.5px;
+    font-size: 16.5px;
+    text-align: center;
+    font-family: roboto;
+}
+
+.topbar > #titulo {
+    text-align: left;
+}
