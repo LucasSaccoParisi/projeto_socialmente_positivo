@@ -1,18 +1,29 @@
-.topbar {
-    display: flex;
-    background-color: #A158FF;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+@import url('https://www.fontspring.com/fonts/my-creative-land/the-seasons');
 
-.topbar > div {
-    margin: 4.5px;
-    padding: 4.5px;
-    font-size: 16.5px;
+.topnav {
+    background-color: #a158ff;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: black;
     text-align: center;
-    font-family: roboto;
-}
-
-.topbar > #titulo {
-    text-align: left;
-}
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #bdbdbd;
+    color: black;
+  }
