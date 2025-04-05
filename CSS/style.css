@@ -1,5 +1,10 @@
 @import url('https://www.fontspring.com/fonts/my-creative-land/the-seasons');
 
+html{
+  background-color: #d8d8d8;
+}
+
+
 .topnav {
     background-color: #a158ff;
     overflow: hidden;
@@ -13,12 +18,12 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    
+    background-color: #ffffff;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ffffff;
+    background-color: #bdbdbd;
     color: black;
   }
   
@@ -26,4 +31,11 @@
   .topnav a.active {
     background-color: #bdbdbd;
     color: black;
+  }
+
+  .topnav {
+    font-family: The Seasons;
+    font-size: 30px;
+    text-align: center;
+    
   }
