@@ -15,10 +15,13 @@ html{
     float: right;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 9px 16px;
     text-decoration: none;
     font-size: 17px;
     background-color: #ffffff;
+    border-radius: 25px;
+    margin: 5px; 
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   /* Change the color of links on hover */
@@ -39,3 +42,23 @@ html{
     text-align: center;
     
   }
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#imagensRollin > img{
+  border-radius: 15px;
+}
+
+.sobreNos{
+  text-align: center;
+  font-family: The Seasons;
+}
+
+.sobreNos > #texto{
+  font-family: Arial, Helvetica, sans-serif;
+}
