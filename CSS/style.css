@@ -21,7 +21,6 @@ html{
     background-color: #ffffff;
     border-radius: 25px;
     margin: 5px; 
-    font-family: Arial, Helvetica, sans-serif;
   }
   
   /* Change the color of links on hover */
@@ -60,5 +59,10 @@ html{
 }
 
 .sobreNos > #texto{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#doacoes{
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
