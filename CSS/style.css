@@ -66,3 +66,15 @@ html{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.gatos_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.altura{
+  height: 150px;
+}
