@@ -73,8 +73,50 @@ html{
   justify-content: center;
   border-radius: 15px;
   margin: 30px;
+  padding: 0px;
+  overflow: hidden;
+  width: 240px;
+  height: 180px;
+  position: absolute;
 }
 
-.altura{
-  height: 150px;
+.textoJS{
+  text-align: center;
+  margin: 30px;
+}
+
+.ilgato {
+  float: left;
+  width: 25%;
+  height: auto;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.ilgato .legato {
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.ilgato img {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  z-index: 4;
+  width: 100%;
+  height: auto;
+}
+
+.theCat .fundo{
+  background-color: rgba(0, 0, 0, 0.55);
+  background-color: transparent;
+  width: 240px;
+  height: 180px;
+  z-index: 1;
+  position: absolute;
 }
