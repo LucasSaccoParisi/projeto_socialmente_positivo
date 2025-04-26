@@ -10,7 +10,6 @@ html{
     box-shadow: 0 2px 30px 0 rgba(0,0,0,.2);
   }
   
-  /* Style the links inside the navigation bar */
   .topnav a {
     float: right;
     color: black;
@@ -23,13 +22,11 @@ html{
     margin: 5px; 
   }
   
-  /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #bdbdbd;
     color: black;
   }
-  
-  /* Add a color to the active/current link */
+
   .topnav a.active {
     background-color: #bdbdbd;
     color: black;
@@ -67,19 +64,6 @@ html{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.gatos_container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 15px;
-  margin: 30px;
-  padding: 0px;
-  overflow: hidden;
-  width: 240px;
-  height: 180px;
-  position: absolute;
-}
-
 .textoJS{
   text-align: center;
   margin: 30px;
@@ -95,28 +79,23 @@ html{
   overflow: hidden;
 }
 
-.ilgato .legato {
+.ilgato {
     float: left;
     padding: 0px;
     position: relative;
     overflow: hidden;
-    width: 100%;
-    height: auto;
+    width: 240px;
+    height: 180px;
 }
 .ilgato img {
   margin: 0px;
   padding: 0px;
   float: left;
-  z-index: 4;
-  width: 100%;
-  height: auto;
-}
-
-.theCat .fundo{
-  background-color: rgba(0, 0, 0, 0.55);
-  background-color: transparent;
+  border-radius: 15px;
   width: 240px;
   height: 180px;
-  z-index: 1;
-  position: absolute;
+}
+
+button{
+  border-radius: 5px;
 }
