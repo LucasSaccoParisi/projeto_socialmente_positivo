@@ -118,3 +118,8 @@ text{
   border-radius: 5px;
   width: 60px;
 }
+
+.contacts button{
+  border-radius: 5px;
+  width: 100px;
+}
