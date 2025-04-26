@@ -4,6 +4,10 @@ html{
   background-color: #d8d8d8;
 }
 
+text{
+  font-family:Arial, Helvetica, sans-serif
+}
+
 .topnav {
     background-color: #a158ff;
     overflow: hidden;
@@ -96,6 +100,21 @@ html{
   height: 180px;
 }
 
-button{
+.losgatos button{
   border-radius: 5px;
+  width: 60px;
+}
+
+.titulo{
+  text-align: center;
+  margin: 25px;
+}
+
+.corpinho{
+  text-align: center;
+}
+
+.corpinho button{
+  border-radius: 5px;
+  width: 60px;
 }
