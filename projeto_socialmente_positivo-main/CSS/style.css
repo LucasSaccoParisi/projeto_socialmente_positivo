@@ -1,0 +1,125 @@
+@import url('https://www.fontspring.com/fonts/my-creative-land/the-seasons');
+
+html{
+  background-color: #d8d8d8;
+}
+
+text{
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.topnav {
+    background-color: #a158ff;
+    overflow: hidden;
+    box-shadow: 0 2px 30px 0 rgba(0,0,0,.2);
+  }
+  
+  .topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 9px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin: 5px; 
+  }
+  
+  .topnav a:hover {
+    background-color: #bdbdbd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #bdbdbd;
+    color: black;
+  }
+
+  .topnav {
+    font-family: The Seasons;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#imagensRollin > img{
+  border-radius: 15px;
+}
+
+.sobreNos{
+  text-align: center;
+  font-family: The Seasons;
+}
+
+.sobreNos > #texto{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#doacoes{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textoJS{
+  text-align: center;
+  margin: 30px;
+}
+
+.ilgato {
+  float: left;
+  width: 25%;
+  height: auto;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.ilgato {
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    width: 240px;
+    height: 180px;
+}
+.ilgato img {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  border-radius: 15px;
+  width: 240px;
+  height: 180px;
+}
+
+.losgatos button{
+  border-radius: 5px;
+  width: 60px;
+}
+
+.titulo{
+  text-align: center;
+  margin: 25px;
+}
+
+.corpinho{
+  text-align: center;
+}
+
+.corpinho button{
+  border-radius: 5px;
+  width: 60px;
+}
+
+.contacts button{
+  border-radius: 5px;
+  width: 100px;
+}
