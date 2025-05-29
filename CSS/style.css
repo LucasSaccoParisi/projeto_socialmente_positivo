@@ -1,8 +1,10 @@
 @import url('https://www.fontspring.com/fonts/my-creative-land/the-seasons');
+@import "tailwindcss";
 
 html{
   background-color: #d8d8d8;
 }
+
 
 text{
   font-family:Arial, Helvetica, sans-serif
@@ -50,3 +52,21 @@ text{
 
 }
 
+  .topnav .dark {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 9px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin: 5px; 
+  }
+  
+  .topnav .dark:hover {
+    background-color: #bdbdbd;
+    color: black;
+  }
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));

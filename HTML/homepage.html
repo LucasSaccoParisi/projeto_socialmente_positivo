@@ -2,7 +2,7 @@
 
 <html lang="pt-br">
 
-<html>
+<html data-theme="dark">
 
 <head>
     <header>
@@ -21,6 +21,7 @@
     <section>
         <div class="topnav">
             <b>Cat Adopt</b>
+            <button class="dark"><i class="fa fa-moon-o"> Modo Escuro</i></button>
             <a href="sign_up.html"><i class="fa fa-user"> Registrar</i></a>
             <a href="page_dos contatos.html"><i class="fa fa-phone"> Contatos</i></a>
             <a href="page_dos_produtos.html"><i class="	fa fa-heart"> Doar</i></a>
@@ -29,7 +30,22 @@
         </div>
     </section>
 
+    <div class="bg-white dark:bg-black text-white">
+    
     <br>
+
+    <script>
+
+        document.documentElement.classList.toggle(
+            "dark",
+            localStorage.theme === "dark" ||
+            (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+        );
+
+        localStorage.theme = "light";
+        localStorage.theme = "dark";
+        localStorage.removeItem("theme");
+    </script>
 
     <div class="imagensRollin">
 
@@ -292,6 +308,7 @@
     <br>
     <br>
     <br>
+    </div>
 </body>
 
 
