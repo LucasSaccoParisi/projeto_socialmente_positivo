@@ -51,22 +51,3 @@ text{
   margin-right: auto;
 
 }
-
-  .topnav .dark {
-    float: right;
-    color: black;
-    text-align: center;
-    padding: 9px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    background-color: #ffffff;
-    border-radius: 25px;
-    margin: 5px; 
-  }
-  
-  .topnav .dark:hover {
-    background-color: #bdbdbd;
-    color: black;
-  }
-
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));

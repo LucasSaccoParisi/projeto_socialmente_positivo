@@ -21,7 +21,6 @@
     <section>
         <div class="topnav">
             <b>Cat Adopt</b>
-            <button class="dark"><i class="fa fa-moon-o"> Modo Escuro</i></button>
             <a href="sign_up.html"><i class="fa fa-user"> Registrar</i></a>
             <a href="page_dos contatos.html"><i class="fa fa-phone"> Contatos</i></a>
             <a href="page_dos_produtos.html"><i class="	fa fa-heart"> Doar</i></a>
@@ -30,22 +29,7 @@
         </div>
     </section>
 
-    <div class="bg-white dark:bg-black text-white">
-    
     <br>
-
-    <script>
-
-        document.documentElement.classList.toggle(
-            "dark",
-            localStorage.theme === "dark" ||
-            (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
-        );
-
-        localStorage.theme = "light";
-        localStorage.theme = "dark";
-        localStorage.removeItem("theme");
-    </script>
 
     <div class="imagensRollin">
 
@@ -308,7 +292,50 @@
     <br>
     <br>
     <br>
-    </div>
+    <button id="copyButton"><i class="fa fa-share-square"> Compatilhar site</i></button>
+    <style>
+        #copyButton {
+            float: middle;
+            color: black;
+            text-align: center;
+            padding: 9px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            background-color: #ffffff;
+            border-radius: 25px;
+            margin: 5px;
+        }
+
+        #copyButton:hover {
+            background-color: #bdbdbd;
+            color: black;
+        }
+
+        #copyButton.active {
+            background-color: #bdbdbd;
+            color: black;
+        }
+    </style>
+
+    <script>
+        document.getElementById('copyButton').addEventListener('click', function () {
+
+            const currentUrl = window.location.href;
+
+            navigator.clipboard.writeText(currentUrl)
+                .then(() => {
+                    alert('link copiado!');
+                })
+                .catch(err => {
+                    console.error('o link deu ruim!!!!!!: ', err);
+                    alert('falha ao copiar link...');
+                });
+        });
+    </script>
+
+    <br>
+    <br>
+    <br>
 </body>
 
 
