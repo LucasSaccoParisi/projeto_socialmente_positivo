@@ -1,5 +1,7 @@
 @import url('https://www.fontspring.com/fonts/my-creative-land/the-seasons');
-@import "tailwindcss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 html{
   background-color: #d8d8d8;
