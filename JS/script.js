@@ -8,20 +8,3 @@ function checkTheme() {
 }
 
 checkTheme();
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', checkTheme);
-
-function setLightTheme() {
-  localStorage.theme = 'light';
-  checkTheme();
-}
-
-function setDarkTheme() {
-  localStorage.theme = 'dark';
-  checkTheme();
-}
-
-function resetTheme() {
-  localStorage.removeItem('theme');
-  checkTheme();
-}
