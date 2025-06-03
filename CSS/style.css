@@ -4,7 +4,7 @@
 @import "tailwindcss/utilities";
 
 html{
-  background-color: #d8d8d8;
+  background-color: "text-black bg-grey dark:bg-black dark:text-white";
 }
 
 
