@@ -3,7 +3,16 @@
 <html lang="pt-br">
 
 <html translate="yes">
-
+    <div id="google_translate_element"></div>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'pt-br'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <head>
     <header>
         <meta charset="UTF-8">

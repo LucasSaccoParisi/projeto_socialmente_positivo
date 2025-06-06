@@ -54,3 +54,12 @@ text{
   margin-right: auto;
 
 }
+
+.losgatos{
+  text-align: center;
+  float: center;
+}
+.losgatos > img{
+  float: center;
+  size: 20px;
+}
