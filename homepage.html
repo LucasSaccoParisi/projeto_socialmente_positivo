@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<html translate="yes">
+    <div id="google_translate_element"></div>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'pt-br'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<head>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Cat Adopt - Home Page</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <script src="./JS/script.js/"></script>
+    </header>
+</head>
+
+<body>
+    <section>
+        <div class="topnav">
+            Cat Adopt
+            <a href="homepage.html"><i class="fa fa-home"> Home</i></a>
+            <a href="page_dos_gatos.html"><i class="fa fa-paw"> Os Gatos</i></a>
+            <a href="page_dos_produtos.html"><i class="	fa fa-heart"> Doar</i></a>
+            <a href="page_dos contatos.html"><i class="fa fa-phone"> Contatos</i></a>
+            <a href="sign_up.html"><i class="fa fa-user"> Registrar</i></a>
+        </div>
+    </section>
+
+    <br>
+
+    <div class="imagensRollin">
+
+        <div class="mySlides">
+            <div class="numbText">1 / 2</div>
+            <img src="../HTML/imagens/Cat Adopt Banner2.png" class="center" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbText">2 / 2</div>
+            <img src="../HTML/imagens/Cat Adopt Banner3.png" class="center" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <style>
+        #imagensRollin>img {
+            border-radius: 15px;
+        }
+
+        .sobreNos {
+            text-align: center;
+            font-family: The Seasons;
+        }
+
+        .sobreNos>#texto {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #doacoes {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .textoJS {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .ilgato {
+            float: left;
+            width: 25%;
+            height: auto;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        .ilgato {
+            float: left;
+            padding: 0px;
+            position: relative;
+            overflow: hidden;
+            width: 240px;
+            height: 180px;
+        }
+
+        .ilgato img {
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            border-radius: 15px;
+            width: 240px;
+            height: 180px;
+        }
+
+        .losgatos button {
+            border-radius: 5px;
+            width: 60px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin: 25px;
+        }
+
+        .corpinho {
+            text-align: center;
+        }
+
+        .corpinho button {
+            border-radius: 5px;
+            width: 60px;
+        }
+
+        .contacts button {
+            border-radius: 5px;
+            width: 100px;
+        }
+
+
+        * {
+            box-sizing: border-box
+        }
+
+        /* Slideshow container */
+        .imagensRollin {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <br>
+
+    <div class="sobreNos">
+        <div class="text-3xl ..."><b>Sobre nós</b></div>
+        <br>
+        <div id="texto">
+            <div class="text-1xl">
+                <p>Somos uma organização sem fundos com o objetivo de dar gatos sem família um lar seguro e confortável
+                    em São Paulo. <br> Também oferecemos a possibilidade de adotar esses pequenos!</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="doacoes">
+        <footer>
+            <div class="text-2xl ...">
+                <b>Por-favor, doe para contribuir o nosso objetivo!</b></div>
+            <br>
+            <table>
+                <i>"Mas para onde vai o meu dinheiro?"</i>
+                <br>
+                Usaremos para:
+                <li>Comprar suprimentos;</li>
+                <li>Comida para os gatos;</li>
+                <li>Brinquedos;</li>
+                <li>Medicamentos;</li>
+                <li>E pagar pelas vacinas.</li>
+            </table>
+        </footer>
+    </div>
+    <br>
+    <br>
+    <br>
+    <button id="copyButton"><i class="fa fa-share-square"> Compatilhar site</i></button>
+    <style>
+        #copyButton {
+            float: middle;
+            color: black;
+            text-align: center;
+            padding: 9px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            background-color: #ffffff;
+            border-radius: 25px;
+            margin: 5px;
+        }
+
+        #copyButton:hover {
+            background-color: #bdbdbd;
+            color: black;
+        }
+
+        #copyButton.active {
+            background-color: #bdbdbd;
+            color: black;
+        }
+    </style>
+
+    <script>
+        document.getElementById('copyButton').addEventListener('click', function () {
+
+            const currentUrl = window.location.href;
+
+            navigator.clipboard.writeText(currentUrl)
+                .then(() => {
+                    alert('link copiado!');
+                })
+                .catch(err => {
+                    console.error('o link deu ruim!!!!!!: ', err);
+                    alert('falha ao copiar link...');
+                });
+        });
+    </script>
+
+    <br>
+    <br>
+    <br>
+</body>
+
+
+</html>
+
+<html>
+  <body class="text-black bg-grey dark:bg-black dark:text-white">
+  </body>
+</html>
